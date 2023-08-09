@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pbooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Futuros lançamentos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Recomendações</a>
+                </li>
+                <li class="lista-menu__titulo">Minha estante</li>
+            </ul>
+            <img class="logo" src="img/logo.png" alt="Logo">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">P</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Recomendações </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Futuros lançamentos</a>
+                </li>
+            </ul>
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+
+
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">PBooks sua plataforma de leitura</h2>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    
+    <section class="carrossel">
+        <div class="carrossel__container">
+            <div class="swiper">
+                    <!--Início Slider main container-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Início Slides -->
+                    <div class="swiper-slide"><img src="img/acotar.jpg"
+                            alt="Cortes de espinhos e rosas"></div>
+                    <div class="swiper-slide"><img src="img/enigma.jpg"
+                            alt="Enigma do Príncipe"></div>
+                    <div class="swiper-slide"><img src="img/sherlock.jpg"
+                            alt="sherlock Holmes"></div>
+                    <div class="swiper-slide"><img src="img/cadaver.png" alt="Saboroso Cadaver"></div>
+                    <div class="swiper-slide"><img src="img/serial.png" alt="Serial Killers"></div>
+                    <div class="swiper-slide"><img src="img/percy1.jpg" alt="Percy Jackson e o ladrão de raios"></div>
+                </div>
+
+                    <!-- Fim Slides -->
+                    <!-- Fim Slider main container-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">A menina do outro lado</h2>
+                        <p class="descrição__texto">Estamos incluindo também mangás em nossa plataforma.
+                        A Menina do Outro Lado é uma fábula sobre a criação do afeto e o amor entre duas criaturas tão diferentes, mas com muito a compartilhar.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img class="capas" src="img/menina.jpg">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/nevoa.jpeg"
+                            alt="Cortes de Nevoa e furia"></div>
+                    <div class="swiper-slide"><img src="img/reliquias.jpg"
+                            alt="Harry Potter e as reliquias da morte"></div>
+                    <div class="swiper-slide"><img src="img/pedra.jpg"
+                            alt="Harry Potter e a pedra filosofal"></div>
+                    <div class="swiper-slide"><img src="img/divergente.jpg" alt="Divergente"></div>
+                    <div class="swiper-slide"><img src="img/A-Cinco-Passos-de-Você-1-684x1024.jpg" alt="A cinco passos de você"></div>
+                    <div class="swiper-slide"><img src="img/Maze_runner.jpg" alt="Maze Runner correr ou morrer"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autores do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Sarah J. Maas</h2>
+                        <p class="descrição__texto">Sarah Janet Maas assina como Sarah J. Maas é uma escritora norte-americana de fantasia.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img class="capas" src="img/SARAH.jpg">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">ULTIMAS PESQUISAS</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">harry potter</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">acotar</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">percy jackson</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">darside</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">colen</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">sherlock</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">animais fantasticos</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">orgulho e preconceito</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro do mundo dos livros!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Paloma Origuela</h2>
+        <ul class="lista-rodapé">
+            
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                        spaceBetween: 10,
+                        slidesPerView: 3,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                        },
+                  });
+                </script>
+
+</body>
+
+</html>
